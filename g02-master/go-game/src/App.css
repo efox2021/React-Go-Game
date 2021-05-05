@@ -1,0 +1,125 @@
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.myButton {
+	box-shadow: 0px 34px 19px -3px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:14px 76px;
+	text-decoration:none;
+	text-shadow:1px 4px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#alerts {
+    height: 40px;
+    line-height: 40px;
+}
+
+#pass-btn {
+  box-shadow: 0px 34px 19px -3px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 65%;
+  left: 62%;
+  margin-right: -50%;
+  transform: translate(-100%, 350%);
+
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:14px 76px;
+	text-decoration:none;
+	text-shadow:1px 4px 0px #3d768a;
+}
+
+.header
+{
+text-align: center;
+color: rgb(255, 255, 255);
+font-size: 70px;
+background-color: rgb(247, 193, 193);
+text-shadow: rgb(122, 122, 122) 4px 3px 0px;
+}
+
+#board {
+    position: fixed;
+    border-radius: 1em;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.intersection {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.intersection:before {
+    border-top: 2px #000 solid;
+    width: 40px;
+    display: block;
+    content: "";
+    top: 18px;
+    position: absolute;
+    z-index: -1;
+}
+
+.intersection:after {
+    border-left: 2px #000 solid;
+    height: 40px;
+    display: block;
+    content: "";
+    left: 18px;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.intersection.black, .intersection.white {
+    border: 1px solid #000;
+}
+
+.intersection.black {
+    background-color: #444;
+}
+
+.intersection.white {
+    background-color: #eee;
+}
